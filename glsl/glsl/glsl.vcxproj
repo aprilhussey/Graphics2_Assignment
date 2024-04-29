@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{85057DB8-F292-4022-8293-140EE28B8B89}</ProjectGuid>
+    <ProjectGuid>{2A8B2397-C327-4E50-BE95-142957A80472}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>glsl</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -74,8 +74,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>D:\include\glm;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\aprilhussey\Documents\GitHub\Graphics2_Assignment\Dependencies\glm;C:\Users\aprilhussey\Documents\GitHub\Graphics2_Assignment\Dependencies\glew;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\aprilhussey\Documents\GitHub\Graphics2_Assignment\Dependencies\glm;C:\Users\aprilhussey\Documents\GitHub\Graphics2_Assignment\Dependencies\glew</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -84,8 +84,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <LibraryPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>D:\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\aprilhussey\Documents\GitHub\Graphics2_Assignment\Dependencies\glm;C:\Users\aprilhussey\Documents\GitHub\Graphics2_Assignment\Dependencies\glew;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\aprilhussey\Documents\GitHub\Graphics2_Assignment\Dependencies\glm;C:\Users\aprilhussey\Documents\GitHub\Graphics2_Assignment\Dependencies\glew</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -110,6 +110,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glew32s.lib;glew32mx.lib;glew32mxs.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -143,7 +144,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>opengl32.lib;glew32.lib;glew32s.lib;glew32mx.lib;glew32mxs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glew32s.lib;glew32mx.lib;glew32mxs.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
